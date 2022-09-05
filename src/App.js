@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import AnimeList from "./components/AnimeList"
 import './components/style.css'
 
 function App() {
@@ -24,6 +25,18 @@ function App() {
         <div className="search-box">
           <input type="search" placeholder="Search Anime"
           onChange={(e) => setSearch(e.target.value)} />
+        </div>
+      </div>
+
+      <div className="container">
+        <div className="animeInfo">
+
+        </div>
+        <div className="anime-row">
+          <h2 className="text-heading">Anime</h2>
+          <div className="row">
+            <AnimeList />
+          </div>
         </div>
       </div>
     </>
