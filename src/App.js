@@ -35,7 +35,7 @@ function App() {
         <div className="anime-row">
           <h2 className="text-heading">Anime</h2>
           <div className="row">
-            <AnimeList />
+            <AnimeList animelist={animeData} />
           </div>
         </div>
       </div>
